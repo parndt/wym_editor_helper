@@ -1,6 +1,4 @@
-﻿if(!WYM_STRINGS) var WYM_STRINGS = new Array();
-
-var WYM_STRINGS_PT = {
+WYMeditor.STRINGS['pt'] = {
     Strong:           'Negrito',
     Emphasis:         'Itálico',
     Superscript:      'Sobrescrito',
@@ -30,6 +28,7 @@ var WYM_STRINGS_PT = {
     Title:            'Título',
     Alternative_Text: 'Texto Alterativo',
     Caption:          'Título Tabela',
+    Summary:          'Summary',
     Number_Of_Rows:   'Número de Linhas',
     Number_Of_Cols:   'Número de Colunas',
     Submit:           'Enviar',
@@ -44,4 +43,3 @@ var WYM_STRINGS_PT = {
     Source_Code:      'Código Fonte'
 };
 
-WYM_STRINGS['pt'] = WYM_STRINGS_PT;
