@@ -24,7 +24,7 @@ Installation
 Follow these steps to use:
 
 	* From your project's root, run:
-		ruby script/plugin install svn://zuurstof.openminds.be/home/kaizer/svn/rails_stuff/plugins/wym_editor_helper
+		ruby script/plugin install git://github.com/parndt/wym_editor_helper.git
 		rake wym:install
 	* Put <%= wym_editor_initialize %> in the view that will host the text editing form.
 	Prefereably this goes into the HEAD section, to keep your html W3C valid. 
@@ -38,13 +38,9 @@ Follow these steps to use:
 Extra info
 ----------
 
-This plugin uses an svn:external to automatically get the latest version of WYMeditor.
-If for some reason the checked out version is not working, you can install a different version like so:
+If you want to upgrade the version used here to a newer version of wym, simply replace the version included (found at wym_editor_helper/assets/wymeditor).
 
-	svn export svn://svn.wymeditor.org/wymeditor/tags/0.4 vendor/plugins/wym_editor_helper/assets/wymeditor
-
-To see what versions are available, check the repository browser at http://files.wymeditor.org/wymeditor/
-Keep in mind that if you check out a newer version of WYM, you need to re-run the wym:install rake command to actually copy the wym files to the public dir. If you do so, be sure to first back up your configuration file (/javascripts/boot_wym.js) if you made any changes to it.
+Keep in mind that if you check out a newer version of WYM, you need to re-run the wym:install rake command to actually copy the wym files to the public dir. If you do so, be sure to first back up your configuration file (/javascripts/boot_wym.js) if you made any changes to it.  For completeness, you may also want to delete the installed wym in your project's /public/wymeditor folder before running the wym:install rake command.
 
 For possible configuration options, you can look at the examples provided in /wymeditor/tests (the ones in /wymeditor/examples are not working at this moment).
 
@@ -55,5 +51,6 @@ http://trac.wymeditor.org/trac/wiki
 Thanks for your feedback
 ------------------------
 
+Philip Arndt
 Steven Soroka
 Helmut Ebritsch
